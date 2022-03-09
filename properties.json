@@ -1,0 +1,43 @@
+{
+    "execution": 70,
+    "terrain_properties": {
+        "grid_size": 150,
+        "num_magnitudes": 5,
+        "max_value": 100,
+        "gaussian_sigma": 8
+    },
+    "agent_properties": {
+        "num_perceptions": 5,
+        "hidden_layer_units": 32,
+        "attentional_limit": 2,
+        "adaptational_rate": 2.5,
+        "error_threshold": 0.005,
+        "error_activation_factor": 1000.0,
+        "maximum_happiness": 5.0,
+        "happiness_rate": 0.75,
+        "happiness_thresholds": {
+            "risk_threshold": 2.5,
+            "death_threshold": 0.0
+        },
+        "evaluation_functions": [
+            "select_0",
+            "select_1",
+            "select_2",
+            "select_3",
+            "select_4"
+        ],
+        "preference_functions": [
+            "abs_sine_function",
+            "abs_sine_function",
+            "abs_sine_function",
+            "abs_sine_function",
+            "abs_sine_function"
+        ]
+    },
+    "environment_properties": {
+        "num_corrupted_perceptions": 4,
+        "corruption_period": 50,
+        "corruption_rate": 3.0,
+        "iterations": 300
+    }
+}
